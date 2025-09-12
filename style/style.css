@@ -1,0 +1,24 @@
+* {
+    /* Testing */
+    border: 2px solid red;
+}
+
+.grid-container {
+    display: grid;
+    grid: 
+        "sidebar header"
+        "sidebar main-content";
+    height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main-content;
+}
