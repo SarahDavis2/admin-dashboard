@@ -11,14 +11,17 @@
     height: 100vh;
 }
 
+/* SIDEBAR */
 .sidebar {
     grid-area: sidebar;
 }
 
+/* HEADER */
 .header {
     grid-area: header;
 }
 
+/* MAIN CONTENT */
 .main-content {
     grid-area: main-content;
 }
