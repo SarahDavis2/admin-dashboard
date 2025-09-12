@@ -1,5 +1,5 @@
 # Admin Dashboard
-The Admin Dashboard uses HTML and CSS. The purpose of this project is to practice using CSS Grid in combination with Flexbox.
+The Admin Dashboard uses HTML and CSS. The purpose of this project is to practice using only CSS Grid.
 
 ## 
 
