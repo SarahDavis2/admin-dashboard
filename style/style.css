@@ -25,6 +25,11 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.sidebar li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* HEADER */
 .header {
     grid-area: header;
@@ -103,5 +108,5 @@
 
 .user-card-ctn {
     display: grid;
-    grid-template-columns: 1fr 4fr
+    grid-template-columns: 1fr 4fr;
 }
