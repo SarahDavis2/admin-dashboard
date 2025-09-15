@@ -4,6 +4,14 @@
     /* border: 2px solid rebeccapurple; */
 }
 
+/* VARIABLES */
+:root {
+    --main-clr: #1892d3;
+    --accent-clr: #edb625;
+    --bg-clr: #e1e8f0;
+    --txt-clr: #e5e5e5;
+}
+
 .grid-ctn {
     display: grid;
     grid-template: 1fr 5fr / 1fr 3fr;
