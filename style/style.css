@@ -26,6 +26,9 @@
     display: grid; /* The Odin Project wants me to practice Grid */
     grid-template-rows: 3.5rem 1fr 3fr;
     gap: 2rem;
+
+    color: white;
+    background-color: var(--main-clr);
 }
 
 .logo-ctn {
@@ -36,6 +39,11 @@
 .sidebar li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* HEADER */
@@ -82,6 +90,15 @@
     justify-self: end;
 }
 
+.header-btm-actions li {
+    list-style-type: none;
+}
+
+.header-btm-actions button {
+    color: white;
+    background-color: var(--main-clr);
+}
+
 /* MAIN CONTENT */
 .main-content {
     grid-area: main-content;
@@ -90,6 +107,8 @@
     grid-template-areas: 
         "main-content-left main-content-right-top"
         "main-content-left main-content-right-btm";
+
+    background-color: var(--bg-clr);
 }
 
 /* MAIN CONTENT LEFT */
