@@ -6,13 +6,10 @@
 
 .grid-ctn {
     display: grid;
-    grid: 
+    grid-template: 1fr 5fr / 1fr 3fr;
+    grid-template-areas: 
         "sidebar header"    
         "sidebar main-content";
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 5fr;
-    height: 100vh;
-    width: 100vw;
 }
 
 /* SIDEBAR */
@@ -75,4 +72,36 @@
 /* MAIN CONTENT */
 .main-content {
     grid-area: main-content;
+    display: grid;
+    grid-template: 1fr 2fr / 4fr 1fr;
+    grid-template-areas: 
+        "main-content-left main-content-right-top"
+        "main-content-left main-content-right-btm";
+}
+
+/* MAIN CONTENT LEFT */
+.main-content-left {
+    grid-area: main-content-left;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main-content-card-ctn {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+/* MAIN CONTENT RIGHT TOP */
+.main-content-right-top {
+    grid-area: main-content-right-top;
+}
+
+/* MAIN CONTENT RIGHT BTM */
+.main-content-right-btm {
+    grid-area: main-content-right-btm;
+}
+
+.user-card-ctn {
+    display: grid;
+    grid-template-columns: 1fr 4fr
 }
