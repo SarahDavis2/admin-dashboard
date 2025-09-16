@@ -9,7 +9,8 @@
     --main-clr: #1892d3;
     --accent-clr: #edb625;
     --bg-clr: #e1e8f0;
-    --txt-clr: #e5e5e5;
+    --dark-grey-clr: #a4a4a4;
+    --shadow-clr: #a4a4a4;
 }
 
 .grid-ctn {
@@ -67,8 +68,6 @@
 .header-top-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: min-content;
-    justify-self: end;
 }
 
 /* HEADER BOTTOM */
@@ -80,13 +79,13 @@
 .header-btm-profile-ctn {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: min-content;
 }
 
 .header-btm-actions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: min-content;
+    /* FIX: Change?? */
+    width: min-content; 
     justify-self: end;
 }
 
@@ -108,7 +107,16 @@
         "main-content-left main-content-right-top"
         "main-content-left main-content-right-btm";
 
+    padding: 2rem;
     background-color: var(--bg-clr);
+}
+
+/* Cards */
+.main-card, .main-content-right-top-card-ctn, .user-card-ctn {
+    background-color: white;
+    border-radius: 1rem;
+    /* FIX SHADOW */
+    box-shadow: 0.25rem 0.25rem 0.5rem var(--shadow-clr);
 }
 
 /* MAIN CONTENT LEFT */
@@ -121,11 +129,34 @@
 .main-content-card-ctn {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-card-left {
+    background-color: var(--accent-clr);
+}
+
+.main-card-right-top p {
+    color: var(--dark-grey-clr);
+}
+
+.main-card-right-btm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* MAIN CONTENT RIGHT TOP */
 .main-content-right-top {
     grid-area: main-content-right-top;
+}
+
+.right-top-card:not(:last-child) {
+    border-bottom: 2px solid var(--bg-clr);
 }
 
 /* MAIN CONTENT RIGHT BTM */
