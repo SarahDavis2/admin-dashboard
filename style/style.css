@@ -52,6 +52,7 @@
     grid-area: header;
     display: grid;
     grid-template-rows: 5fr 2fr;
+    padding: 4rem;
 }
 
 /* HEADER TOP */
@@ -87,6 +88,7 @@
     /* FIX: Change?? */
     width: min-content; 
     justify-self: end;
+    gap: 2rem;
 }
 
 .header-btm-actions li {
@@ -96,6 +98,10 @@
 .header-btm-actions button {
     color: white;
     background-color: var(--main-clr);
+    border: none;
+    border-radius: 4rem;
+    padding: 1.25rem;
+    width: 144px;
 }
 
 /* MAIN CONTENT */
