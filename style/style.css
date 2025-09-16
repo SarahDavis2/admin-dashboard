@@ -51,7 +51,7 @@
 .header {
     grid-area: header;
     display: grid;
-    grid-template: 3fr 1fr / 1fr 1fr;
+    grid-template: 1fr 1fr / 2fr 1fr;
     padding: 4rem;
 }
 
