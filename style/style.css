@@ -17,6 +17,11 @@ svg:not(.pfp) {
     width: 2rem;
 }
 
+body {
+    height: 80vh;
+
+}
+
 .grid-ctn {
     display: grid;
     grid-template: 14rem 1fr / 1fr 4fr;
@@ -39,7 +44,7 @@ svg:not(.pfp) {
 
 .logo-ctn {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 48px 1fr;
     align-items: center;
 }
 
@@ -53,7 +58,8 @@ svg:not(.pfp) {
 
 .sidebar li {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 32px 1fr;
+    gap: 0.5rem;
 }
 
 .sidebar a {
@@ -75,23 +81,34 @@ svg:not(.pfp) {
     align-items: center;
 }
 
+.header-top-profile-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .header-top-left {
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 32px 10fr;
+    gap: 1rem;
+}
+
+.header-top-left input {
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bg-clr);
+    height: 2rem;
 }
 
 .header-top-right {
     display: grid;
-    grid-template: 4rem / 1fr 1fr 1fr;
-}
-
-.header-top-right svg.pfp {
-    /* width: 50px; */
+    grid-template: 4rem / 32px 50px 200px;
+    gap: 4rem;
+    justify-content: end;
 }
 
 .header-btm-left {
     display: grid;
-    grid-template: 4rem / 8rem 1fr;
+    grid-template: 4rem / 64px 1fr;
     gap: 0.5rem;
 }
 
@@ -162,7 +179,7 @@ svg:not(.pfp) {
 
 .main-content-card-ctn {
     display: grid;
-    grid-template-rows: repeat(3, 304px);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
